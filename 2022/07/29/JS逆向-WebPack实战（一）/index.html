@@ -16,12 +16,12 @@
   <meta name="author" content="Javeley">
   <meta name="keywords" content="">
   
-    <meta name="description" content="JS逆向 | WebPack实战（一）    文章配套B站视频，很多话语简略了，建议配着视频看。 Function&#x2F;函数&#x2F;方法常规的js函数命名方法： 12345678&#x2F;&#x2F;1. 常规functionvar test &#x3D; function()&amp;#123;    console.log(123);&amp;#125;function test()&amp;#123;    console.log(">
+    <meta name="description" content="JS逆向 | WebPack实战（一）    文章配套B站视频，很多话语简略了，建议配着视频看。     地址：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV13F411P7XB&#x2F; 开始之前了，简单过一下下面几个方法加深印象，便于更好理解加载器。也可以直接从webpack标题开始看起。 Function&#x2F;函数&#x2F;方法常规的js函数命名方法： 12345678&#x2F;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS逆向 | WebPack实战（一）">
 <meta property="og:url" content="http://example.com/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
 <meta property="og:site_name" content="Javeley">
-<meta property="og:description" content="JS逆向 | WebPack实战（一）    文章配套B站视频，很多话语简略了，建议配着视频看。 Function&#x2F;函数&#x2F;方法常规的js函数命名方法： 12345678&#x2F;&#x2F;1. 常规functionvar test &#x3D; function()&amp;#123;    console.log(123);&amp;#125;function test()&amp;#123;    console.log(">
+<meta property="og:description" content="JS逆向 | WebPack实战（一）    文章配套B站视频，很多话语简略了，建议配着视频看。     地址：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV13F411P7XB&#x2F; 开始之前了，简单过一下下面几个方法加深印象，便于更好理解加载器。也可以直接从webpack标题开始看起。 Function&#x2F;函数&#x2F;方法常规的js函数命名方法： 12345678&#x2F;">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-07-24-13-20-39-image.png">
 <meta property="og:image" content="http://example.com/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-01-15-31-18-image.png">
@@ -48,7 +48,7 @@
 <meta property="og:image" content="http://example.com/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-04-15-45-41-image.png">
 <meta property="og:image" content="http://example.com/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-04-15-49-01-image.png">
 <meta property="article:published_time" content="2022-07-29T11:32:38.000Z">
-<meta property="article:modified_time" content="2022-08-06T10:43:04.343Z">
+<meta property="article:modified_time" content="2022-08-07T00:46:04.774Z">
 <meta property="article:author" content="Javeley">
 <meta property="article:tag" content="JS逆向">
 <meta property="article:tag" content="逆向">
@@ -257,7 +257,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          9.7k 字
+          9.9k 字
         
       </span>
     
@@ -268,7 +268,7 @@
         
         
         
-          81 分钟
+          83 分钟
         
       </span>
     
@@ -320,6 +320,8 @@
               <div class="markdown-body">
                 
                 <h1 id="JS逆向-WebPack实战（一）"><a href="#JS逆向-WebPack实战（一）" class="headerlink" title="JS逆向 | WebPack实战（一）"></a>JS逆向 | WebPack实战（一）</h1><p>    文章配套B站视频，很多话语简略了，建议配着视频看。</p>
+<p>    地址：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV13F411P7XB/">https://www.bilibili.com/video/BV13F411P7XB/</a></p>
+<p>开始之前了，简单过一下下面几个方法加深印象，便于更好理解加载器。也可以直接从webpack标题开始看起。</p>
 <h2 id="Function-x2F-函数-x2F-方法"><a href="#Function-x2F-函数-x2F-方法" class="headerlink" title="Function&#x2F;函数&#x2F;方法"></a>Function&#x2F;函数&#x2F;方法</h2><p>常规的js函数命名方法：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">//1. 常规function</span><br><span class="hljs-keyword">var</span> test = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)&#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">123</span>);<br>&#125;<br><br><span class="hljs-keyword">function</span> <span class="hljs-title function_">test</span>(<span class="hljs-params"></span>)&#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">2</span>);<br>&#125;<br></code></pre></td></tr></table></figure>
 
@@ -338,6 +340,7 @@
 <h2 id="Webpack"><a href="#Webpack" class="headerlink" title="Webpack"></a>Webpack</h2><blockquote>
 <p>webpack 一个静态模块打包器，有入口、出口、loader 和插件，<mark>通过loader加载器对js、css、图片文件等资源进行加载渲染。</mark></p>
 </blockquote>
+<p>实战站点：<a target="_blank" rel="noopener" href="https://spa2.scrape.center/">https://spa2.scrape.center/</a></p>
 <h3 id="WebPack-站点长什么样"><a href="#WebPack-站点长什么样" class="headerlink" title="WebPack 站点长什么样"></a>WebPack 站点长什么样</h3><p>    方法1. 右键查看源码发现只会有js链接文件，没有其他多余的前端信息，f12看元素就会有很多数据。<img src="/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-01-15-31-18-image.png" srcset="/img/loading.gif" lazyload></p>
 <p>   方法2. 看Js文件，一般会有一个app.xxxx.js或长得像MD5的文件名，然后js内容有很多a、b、c、d、n…的变量来回调用，反正就是看着乱。</p>
 <p><img src="/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-01-15-32-58-image.png" srcset="/img/loading.gif" lazyload></p>
@@ -357,7 +360,7 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs javascript">(<br>    [<br>    <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)&#123;<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;function1&quot;</span>);<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">r</span>.<span class="hljs-property">i</span>)&#125;<br>    ,<br>    <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)&#123;<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;function2&quot;</span>)&#125;<br>    ]<br>)<br><span class="hljs-comment">/* 这里的参数可以是传入数组，也可以是对象，都是经常看见的。</span><br><span class="hljs-comment">*/</span><br>(<br>    &#123;<br>    <span class="hljs-string">&quot;1&quot;</span>:<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)&#123;<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;function1&quot;</span>);<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">r</span>.<span class="hljs-property">i</span>)&#125;<br>    ,<br>   <span class="hljs-string">&quot;2&quot;</span>:<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)&#123;<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;function2&quot;</span>)&#125;<br>    &#125;<br>)<br></code></pre></td></tr></table></figure>
 
-<p>加载器是将参数作为一个数组【】传入的，格式为：<code>!function(e)&#123;&#125;(数组)</code>  参数<mark>e</mark>就是传入的数组， 接着看：</p>
+<p>这里的加载器是将参数作为一个数组【】传入的，格式为：<code>!function(e)&#123;&#125;(数组)</code>  参数<mark>e</mark>就是传入的数组， 接着看：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs javascript"> <span class="hljs-keyword">var</span> t=&#123;&#125;<br> <span class="hljs-keyword">function</span> <span class="hljs-title function_">d</span>(<span class="hljs-params">n</span>)&#123;<br>       <span class="hljs-keyword">if</span> (t[n])<br>           <span class="hljs-keyword">return</span> t[n].<span class="hljs-property">exports</span>;<br>       <span class="hljs-keyword">var</span> r = t[n] = &#123;<br>           <span class="hljs-attr">i</span>:n,<br>           <span class="hljs-attr">l</span>:!<span class="hljs-number">1</span>,<br>           <span class="hljs-attr">exports</span>:&#123;&#125;<br>           &#125;;<br>       <span class="hljs-keyword">return</span> e[n].<span class="hljs-title function_">call</span>(r.<span class="hljs-property">exports</span>,r,r.<span class="hljs-property">exports</span>,d),<br>       r.<span class="hljs-property">l</span> = !<span class="hljs-number">0</span>;<br>       r.<span class="hljs-property">exports</span><br>   &#125;<br><span class="hljs-title function_">d</span>(<span class="hljs-number">1</span>)<br></code></pre></td></tr></table></figure>
 
 <p>上述代码声明了一个<mark>d</mark>方法并执行，传入<code>1</code>作为参数，<code>d</code>方法中的<code>if (t[n])</code>并没有实际意义，因为<code>t</code>本来就没有声明的，可以缩减为：</p>
@@ -403,7 +406,6 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">//1. </span><br>xxxxx&#123;<br>    <span class="hljs-attr">a</span>:e.<span class="hljs-property">name</span>,<br>    <span class="hljs-attr">data</span>:e.<span class="hljs-property">data</span>,<br>    <span class="hljs-attr">b</span>:e.<span class="hljs-property">url</span>,<br>    <span class="hljs-attr">c</span>:n<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <p>这种键值对格式的跟<mark>ajax</mark>请求长得很相似，有可能是请求赋值的地方，也不绝对，只是大家注意就好。</p>
-<p>实战站点：<a target="_blank" rel="noopener" href="https://spa2.scrape.center/">https://spa2.scrape.center/</a></p>
 <p>    </p>
 <p>    访问站点右键源码就能发现这是一个webpack网站，数据并不存在于源码之中，是通过XHR获取的JSON数据。</p>
 <p><img src="/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-01-15-54-52-image.png" srcset="/img/loading.gif" lazyload></p>
@@ -438,24 +440,25 @@
 
 <p>而<code>r(&quot;3452&quot;)</code> 跟过去，发现很多调用的<code>r(xxx)</code>的</p>
 <p><img src="/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-01-20-20-13-image.png" srcset="/img/loading.gif" lazyload></p>
-<p>    这种情况下很多依赖类调用，如果扣不全很可能缺少某个类从而导致报错无法运行；<mark>在依赖少的情况下可以选择缺啥补啥的原则，缺少什么类就去找什么类</mark>。<mark>依赖多的情况下也可以选择把js代码全都摘下来，这样不管有没有用到的方法我代码里都有</mark>。但是十几万行代码运行肯定会影响性能，具体优化办法后续会说明的。</p>
+<p>    这种情况下很多依赖类调用，如果扣不全很可能缺少某个类从而导致报错无法运行；<mark>在依赖少的情况下可以选择缺啥补啥的原则，缺少什么方法就去找什么方法</mark>。<mark>依赖多的情况下也可以选择把js代码全都摘下来，这样不管有没有用到的方法我代码里都有</mark>。但是十几万行代码运行肯定会影响性能，具体优化办法后续会说明的。</p>
 <h3 id="扣取代码"><a href="#扣取代码" class="headerlink" title="扣取代码"></a>扣取代码</h3><p>    由于案例站点依赖比较多，所以只能演示全扣的办法，首先我们把手上的信息整理一下：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs javascript">加密方法为 ：e = <span class="hljs-title class_">Object</span>(i[<span class="hljs-string">&quot;a&quot;</span>])(<span class="hljs-variable language_">this</span>.<span class="hljs-property">$store</span>.<span class="hljs-property">state</span>.<span class="hljs-property">url</span>.<span class="hljs-property">index</span>, a);<br><span class="hljs-comment">//</span><br>而 <span class="hljs-title class_">Object</span>(i[<span class="hljs-string">&quot;a&quot;</span>]) 在“7d29”模块里，为：<br>     <span class="hljs-keyword">function</span> <span class="hljs-title function_">i</span>(<span class="hljs-params"></span>) &#123;<br>            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> t = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">round</span>((<span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>).<span class="hljs-title function_">getTime</span>() / <span class="hljs-number">1e3</span>).<span class="hljs-title function_">toString</span>(), e = <span class="hljs-variable language_">arguments</span>.<span class="hljs-property">length</span>, r = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>(e), i = <span class="hljs-number">0</span>; i &lt; e; i++)<br>                r[i] = <span class="hljs-variable language_">arguments</span>[i];<br>            r.<span class="hljs-title function_">push</span>(t);<br>            <span class="hljs-keyword">var</span> o = n.<span class="hljs-title class_">SHA1</span>(r.<span class="hljs-title function_">join</span>(<span class="hljs-string">&quot;,&quot;</span>)).<span class="hljs-title function_">toString</span>(n.<span class="hljs-property">enc</span>.<span class="hljs-property">Hex</span>)<br>              , c = n.<span class="hljs-property">enc</span>.<span class="hljs-property">Base64</span>.<span class="hljs-title function_">stringify</span>(n.<span class="hljs-property">enc</span>.<span class="hljs-property">Utf8</span>.<span class="hljs-title function_">parse</span>([o, t].<span class="hljs-title function_">join</span>(<span class="hljs-string">&quot;,&quot;</span>)));<br>            <span class="hljs-keyword">return</span> c<br>        &#125;<br><span class="hljs-comment">//</span><br>里面又又n的依赖调用， 为： <span class="hljs-title function_">r</span>(<span class="hljs-string">&quot;3452&quot;</span>);<br><span class="hljs-comment">//</span><br>r 为：加载器<br>   <span class="hljs-keyword">function</span> <span class="hljs-title function_">c</span>(<span class="hljs-params">t</span>) &#123;<br>        <span class="hljs-keyword">if</span> (r[t])<br>            <span class="hljs-keyword">return</span> r[t].<span class="hljs-property">exports</span>;<br>        <span class="hljs-keyword">var</span> n = r[t] = &#123;<br>            <span class="hljs-attr">i</span>: t,<br>            <span class="hljs-attr">l</span>: !<span class="hljs-number">1</span>,<br>            <span class="hljs-attr">exports</span>: &#123;&#125;<br>        &#125;;<br>        <span class="hljs-keyword">return</span> e[t].<span class="hljs-title function_">call</span>(n.<span class="hljs-property">exports</span>, n, n.<span class="hljs-property">exports</span>, c),<br>        n.<span class="hljs-property">l</span> = !<span class="hljs-number">0</span>,<br>        n.<span class="hljs-property">exports</span><br>    &#125;<br><span class="hljs-comment">//</span><br>“<span class="hljs-number">3452</span><span class="hljs-string">&quot;为模块方法：</span><br><span class="hljs-string">       3452: function(t, e, r) &#123;</span><br><span class="hljs-string">        (function(e, n, i) &#123;</span><br><span class="hljs-string">            t.exports = n(r(&quot;</span>21bf<span class="hljs-string">&quot;), r(&quot;</span><span class="hljs-number">3252</span><span class="hljs-string">&quot;), r(&quot;</span><span class="hljs-number">17e1</span><span class="hljs-string">&quot;), r(&quot;</span>a8ce<span class="hljs-string">&quot;), r(&quot;</span><span class="hljs-number">1132</span><span class="hljs-string">&quot;), r(&quot;</span>72fe<span class="hljs-string">&quot;), r(&quot;</span>df2f<span class="hljs-string">&quot;), r(&quot;</span>94f8<span class="hljs-string">&quot;), r(&quot;</span>191b<span class="hljs-string">&quot;), r(&quot;</span>d6e6<span class="hljs-string">&quot;), r(&quot;</span>b86b<span class="hljs-string">&quot;), r(&quot;</span>e61b<span class="hljs-string">&quot;), r(&quot;</span>10b7<span class="hljs-string">&quot;), r(&quot;</span><span class="hljs-number">5980</span><span class="hljs-string">&quot;), r(&quot;</span>7bbc<span class="hljs-string">&quot;), r(&quot;</span>2b79<span class="hljs-string">&quot;), r(&quot;</span>38ba<span class="hljs-string">&quot;), r(&quot;</span>00bb<span class="hljs-string">&quot;), r(&quot;</span>f4ea<span class="hljs-string">&quot;), r(&quot;</span>aaef<span class="hljs-string">&quot;), r(&quot;</span>4ba9<span class="hljs-string">&quot;), r(&quot;</span>81bf<span class="hljs-string">&quot;), r(&quot;</span>a817<span class="hljs-string">&quot;), r(&quot;</span>a11b<span class="hljs-string">&quot;), r(&quot;</span>8cef<span class="hljs-string">&quot;), r(&quot;</span>2a66<span class="hljs-string">&quot;), r(&quot;</span>b86c<span class="hljs-string">&quot;), r(&quot;</span>6d08<span class="hljs-string">&quot;), r(&quot;</span>c198<span class="hljs-string">&quot;), r(&quot;</span>a40e<span class="hljs-string">&quot;), r(&quot;</span>c3b6<span class="hljs-string">&quot;), r(&quot;</span><span class="hljs-number">1382</span><span class="hljs-string">&quot;), r(&quot;</span>3d5a<span class="hljs-string">&quot;))</span><br><span class="hljs-string">        &#125;</span><br><span class="hljs-string">        )(0, (function(t) &#123;</span><br><span class="hljs-string">            return t</span><br><span class="hljs-string">        &#125;</span><br><span class="hljs-string">        ))</span><br><span class="hljs-string">    &#125;</span><br></code></pre></td></tr></table></figure>
 
-<p><code>3452</code>模块调用的其他依赖模块太多，直接选择把<code>chunk-4136500c.f3e9bb54.js</code>文件的所有的模块拷贝下来命名为：<code>demo-model1.js</code></p>
+<p><code>3452</code>模块调用的其他依赖模块太多，直接选择把<code>chunk-4136500c.f3e9bb54.js</code>文件的所有的模块拷贝下来命名为：<code>demo-model1.js</code>, <code>window</code>对象并不存在编译器中，记得<code>var window=global</code>声明一下</p>
 <p><img src="/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-02-13-09-13-image.png" srcset="/img/loading.gif" lazyload></p>
-<p> 把加载器扣出来，然后导入模块文件，然后设置一个全局变量<code>_c</code> ，将加载器<code>c</code>赋值<code>_c</code>导出运行可以发现报错：</p>
+<p> 把加载器扣出来，然后使用<code>require()</code>导入模块文件，然后设置一个全局变量<code>_c</code> ，将加载器<code>c</code>赋值<code>_c</code>导出运行可以发现报错：</p>
 <p>    第二个报错提示：<code>at Object.3846 (d:\文稿\Js逆向\demo-model1.js:727:9)</code> 模块文件的<code>727</code>行报错</p>
 <p><img src="/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-02-16-39-36-image.png" srcset="/img/loading.gif" lazyload></p>
 <p>跟过来<code>727</code>行发现又有其他模块调用，应该是缺少了<code> r(&quot;9e1e&quot;) </code>或者<code>r(&quot;86cc&quot;)</code>导致的报错，</p>
 <p><img src="/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-02-17-14-47-image.png" srcset="/img/loading.gif" lazyload></p>
 <p>果然搜索也只有一个调用，没有声明的地方。那么又得取扣其他页面代码了。</p>
 <p><img src="/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-02-17-16-28-image.png" srcset="/img/loading.gif" lazyload></p>
-<p>全局搜索网页发现，<code>86cc</code>模块的在<code>chunk-vendors.77daf991.js</code> 文件中被声明了，我们也选择将这文件的所有模块拷贝下来并命名为：<code>demo-module2.js</code>。</p>
+<p>全局搜索网页发现，<code>86cc</code>模块的在<code>chunk-vendors.77daf991.js</code> 文件中被声明了，我们也选择将这文件的所有模块拷贝下来并命名为：<code>demo-module2.js</code>。这两个扣完在编译器中基本也不差模块了，两个js文件全都扣下来了。</p>
 <h3 id="自吐算法"><a href="#自吐算法" class="headerlink" title="自吐算法"></a>自吐算法</h3><blockquote>
 <p>上面完整分析了模块与加载器，可谓是你中有我我中有你；由于所有模块都需要经过加载器后调用，所以根据这点特征；可以在调用某个加载模块时，设置一个全局变量，hook所有接下来要调用的模块存储到变量后导出；</p>
 </blockquote>
 <p>   </p>
+<p>hook有一定的局限性，只能到加密方法调用附近进行hook。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-variable language_">window</span>.<span class="hljs-property">_load</span> = c;<br><span class="hljs-variable language_">window</span>.<span class="hljs-property">_model</span> =  t.<span class="hljs-title function_">toString</span>()+<span class="hljs-string">&quot;:&quot;</span>+(e[t]+<span class="hljs-string">&quot;&quot;</span>)+ <span class="hljs-string">&quot;,&quot;</span>;<br>c = <span class="hljs-keyword">function</span>(<span class="hljs-params">t</span>)&#123;<br>    <span class="hljs-variable language_">window</span>.<span class="hljs-property">_load</span> = <span class="hljs-variable language_">window</span>.<span class="hljs-property">_load</span> + t.<span class="hljs-title function_">toString</span>()+<span class="hljs-string">&quot;:&quot;</span>+(e[t]+<span class="hljs-string">&quot;&quot;</span>)+ <span class="hljs-string">&quot;,&quot;</span>;<br>     <span class="hljs-keyword">return</span> <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">_load</span>(t);<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <h3 id="自动化-Playwright"><a href="#自动化-Playwright" class="headerlink" title="自动化 | Playwright"></a>自动化 | Playwright</h3><blockquote>
@@ -463,6 +466,7 @@
 </blockquote>
 <p>   </p>
 <p>站点源码：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/wgwrUvQKFcG3g6SjKnC5kQ"> Burpy｜一款流量解密插件 </a>，在不扣去加密算法时直接就进行爆破：</p>
+<p>简单修改一下，将账户和密码都为123的密文放在后台固定写死，如果前端账户和密码都为123就返回密文，不然返回error</p>
 <p><img src="/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-04-15-28-56-image.png" srcset="/img/loading.gif" lazyload></p>
 <p>安装好<code>Playwright</code>后cmd输入 <code>python -m playwright codegen</code> ，会弹出一个浏览器，访问要爆破的URL。走一遍登录流程后，<code>Playwright</code>会自动生成流程代码。</p>
 <p><img src="/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-04-15-33-16-image.png" srcset="/img/loading.gif" lazyload></p>
@@ -472,7 +476,7 @@
 <p><img src="/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-04-15-45-41-image.png" srcset="/img/loading.gif" lazyload></p>
 <p>运行结果：账户密码为123，123，加密密文为：<code>PomtfmGnIAN54uvLYlgbH+CN/3mhNQdaAR/7+vFOAuU=</code></p>
 <p>    <img src="/2022/07/29/JS%E9%80%86%E5%90%91-WebPack%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89/2022-08-04-15-49-01-image.png" srcset="/img/loading.gif" lazyload></p>
-<p>关于接入验证码就不演示了，第三方像超级鹰这类的平台都已经将识别模块打包好，导入简单修改就能用了，网上文章也相当多，本文还是以JS逆向为主线。</p>
+<p>关于接入验证码就不演示了，第三方像超级鹰这类的平台都已经将识别模块打包好，导入简单修改就能用了，网上文章也相当多。</p>
 
                 
               </div>
